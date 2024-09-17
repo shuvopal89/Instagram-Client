@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: #00444E;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #27272A;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4c4c50;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: #5e5e63;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #7b7b81;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scaleAnimShow {
+    animation: scaleShow 0.1s;
+}
+
+@keyframes scaleShow {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.accountMainLeft {
+    width: calc(100% - 330px);
+}
+
+@media only screen and (max-width: 768px) {
+    .showFollowers {
+        height: calc(100% - 100px);
+    }
+    .addFromSaved {
+        height: calc(100% - 100px);
+    }
+    .accountMainLeft {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .mainLeft {
+        width: calc(100% - 72px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainLeft {
+        width: calc(100%);
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.mainLeft {
+    min-width: calc(100% - 245px);
+}
+
+/* code start for switch animation */
+.switchCircle {
+    transition: all 0.2s;
+}
+
+.switchCircleActive {
+    transform: translateX(16px);
+}
+
+.switchCircleInactive {
+    transform: translateX(0px);
+}
+
+/* code end for switch animation */
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
