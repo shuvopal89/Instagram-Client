@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lobster: ['"Lobster Two"', "sans-serif"]
+        lobster: ["Lobster", "sans-serif"]
       }
     }
   },
